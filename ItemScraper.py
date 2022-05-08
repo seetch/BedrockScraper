@@ -25,7 +25,8 @@ for row in rows:
         if(cell.find('a')):
             block_name = cell.find('a').text
 
-        if ("Potion" not in block_name and "Splash Potion" not in block_name and "Arrow of" not in block_name):
+
+    if ("Potion" in block_name or "Splash Potion" in block_name or "Arrow of" in block_name):
             continue
 
     block_dict[block_name] = img_url
